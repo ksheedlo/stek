@@ -170,7 +170,13 @@ stek() {
       _stek_list_users
       ;;
     "new")
-      _stek_create_user "$2"
+      if [[ -n "$2" ]]
+      then
+        _stek_create_user "$2"
+      else
+        echo "Usage: stek new [USERID]"
+        return 2
+      fi
       ;;
   esac
 }
