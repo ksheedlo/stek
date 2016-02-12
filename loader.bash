@@ -10,4 +10,5 @@
 . $HOME/.stek/code/bf.bash
 . $HOME/.stek/code/cq.bash
 . $HOME/.stek/code/ele.bash
+. $HOME/.stek/code/electl.bash
 
